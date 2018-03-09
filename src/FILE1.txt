@@ -1,0 +1,78 @@
+==================================
+Execution Stack 
+
+a=2+3*5
+(b=a+1 ; Print(b))
+
+Symbol Table 
+
+
+Output Table 
+
+
+FileTable 
+
+
+==================================
+Execution Stack 
+
+(b=a+1 ; Print(b))
+
+Symbol Table 
+
+a-->17
+
+Output Table 
+
+
+FileTable 
+
+
+==================================
+Execution Stack 
+
+b=a+1
+Print(b)
+
+Symbol Table 
+
+a-->17
+
+Output Table 
+
+
+FileTable 
+
+
+==================================
+Execution Stack 
+
+Print(b)
+
+Symbol Table 
+
+a-->17
+b-->18
+
+Output Table 
+
+
+FileTable 
+
+
+==================================
+Execution Stack 
+
+
+Symbol Table 
+
+a-->17
+b-->18
+
+Output Table 
+
+18
+
+FileTable 
+
+

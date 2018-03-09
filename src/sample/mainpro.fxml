@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancora" prefHeight="400.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerProg">
+   <children>
+      <Button fx:id="OneStep" layoutX="116.0" layoutY="357.0" mnemonicParsing="false" onAction="#allSteps" prefHeight="32.0" prefWidth="389.0" text="One Step" textFill="#072bf5">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold Italic" size="16.0" />
+         </font></Button>
+      <TableView fx:id="heap" layoutX="129.0" layoutY="143.0" prefHeight="201.0" prefWidth="102.0">
+        <columns>
+          <TableColumn fx:id="Addr" prefWidth="43.0" text="Addr" />
+          <TableColumn fx:id="ValueH" prefWidth="55.0" text="ValueH" />
+        </columns>
+      </TableView>
+      <ListView fx:id="outlist" layoutX="544.0" layoutY="47.0" prefHeight="343.0" prefWidth="49.0" />
+      <TextField fx:id="THeap" layoutX="148.0" layoutY="112.0" prefHeight="24.0" prefWidth="67.0" text=" Heap">
+         <font>
+            <Font name="Courant Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="TOut" layoutX="537.0" layoutY="14.0" prefHeight="27.0" prefWidth="67.0" text="Out List">
+         <font>
+            <Font name="MV Boli" size="11.0" />
+         </font></TextField>
+      <TableView fx:id="filetable" layoutX="255.0" layoutY="144.0" prefHeight="200.0" prefWidth="102.0">
+        <columns>
+          <TableColumn fx:id="Identifier" minWidth="0.0" prefWidth="44.0" text="Identifier" />
+          <TableColumn fx:id="FileName" prefWidth="54.0" text="FileName" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TFile" layoutX="251.0" layoutY="112.0" prefHeight="25.0" prefWidth="102.0" text="File Table">
+         <font>
+            <Font name="Courant Bold Italic" size="13.0" />
+         </font></TextField>
+      <TableView fx:id="symtable" layoutX="392.0" layoutY="144.0" prefHeight="200.0" prefWidth="102.0">
+        <columns>
+          <TableColumn fx:id="VarN" prefWidth="46.0" text="VarN" />
+          <TableColumn fx:id="ValueS" prefWidth="52.0" text="ValueS" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TSym" layoutX="400.0" layoutY="112.0" prefHeight="25.0" prefWidth="84.0" text="SymTable">
+         <font>
+            <Font name="Courant Bold Italic" size="13.0" />
+         </font></TextField>
+      <ListView fx:id="Stack" layoutX="90.0" layoutY="29.0" prefHeight="69.0" prefWidth="440.0" />
+      <TextField fx:id="TStack" layoutX="28.0" layoutY="51.0" prefHeight="25.0" prefWidth="59.0" text="Stack">
+         <font>
+            <Font name="DejaVu Serif Bold Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="progID" layoutX="45.0" layoutY="20.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label layoutX="1.0" layoutY="15.0" prefHeight="32.0" prefWidth="49.0" text="Prog ID:" textFill="WHITE" />
+      <Separator layoutX="111.0" layoutY="104.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="1.09" specularExponent="32.09" surfaceScale="2.9">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="BLACK" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Button fx:id="change" layoutX="15.0" layoutY="143.0" mnemonicParsing="false" onAction="#Change" prefHeight="120.0" prefWidth="91.0" text="Change" textFill="#2804f2">
+         <font>
+            <Font name="DejaVu Serif Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="239.0" layoutY="104.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="6.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#070707" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Separator layoutX="371.0" layoutY="104.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="6.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="BLACK" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Separator layoutX="507.0" layoutY="101.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="BLACK" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Button fx:id="shoB" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#Show" prefHeight="43.0" prefWidth="91.0" text="Show" textFill="#0900ff">
+         <font>
+            <Font name="DejaVu Serif Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,778 @@
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+v=10
+(New(a,22) ; (fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a)))))
+
+Symbol Table 
+
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+(New(a,22) ; (fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a)))))
+
+Symbol Table 
+
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+New(a,22)
+(fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+(fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a))))))
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(v)
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+WriteHeap(a,30)
+(v=32 ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(v=32 ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+v=32
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(v)
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+32 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+32 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+v=10
+(New(a,22) ; (fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a)))))
+
+Symbol Table 
+
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+(New(a,22) ; (fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a)))))
+
+Symbol Table 
+
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+New(a,22)
+(fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+(fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))) ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 1
+
+Execution Stack 
+
+fork((WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a))))))
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(WriteHeap(a,30) ; (v=32 ; (Print(v) ; Print(HeapRead(a)))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(v)
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+WriteHeap(a,30)
+(v=32 ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+
+FileTable 
+
+
+Heap Management 
+
+1-->22 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(v=32 ; (Print(v) ; Print(HeapRead(a))))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+v=32
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->10 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+(Print(v) ; Print(HeapRead(a)))
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(v)
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+Print(HeapRead(a))
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+32 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
+==================================
+The prog who write into file: 3
+
+Execution Stack 
+
+
+Symbol Table 
+
+a-->1 
+v-->32 
+
+Output Table 
+
+10 
+30 
+32 
+30 
+
+FileTable 
+
+
+Heap Management 
+
+1-->30 
+
